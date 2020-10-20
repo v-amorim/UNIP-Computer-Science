@@ -1,0 +1,85 @@
+%---------------------------------------------------------------------------------
+% Cover page
+%---------------------------------------------------------------------------------
+\setmainfont{Arial}
+\begin{titlepage} 
+
+	\begin{center}
+\begin{minipage}{1\textwidth} % Begins new environment (like a text box)
+    \large
+    \centering
+    
+        \makebox[\textwidth]{\includegraphics[scale=1]{imagens/Logo UNIP.png}}
+        {\LARGE\bfseries UNIP – UNIVERSIDADE PAULISTA\\}
+        {\LARGE Curso de Ciência da Computação}
+\end{minipage}
+\end{center}
+
+  \begin{minipage}{\linewidth}
+    \centering
+  \end{minipage}
+	
+\vspace*{2in} % Adds some space in-between
+	
+\begin{center}
+
+{\large\bfseries ATIVIDADES PRÁTICAS SUPERVISIONADAS - APS }\\[0.4cm] % Add your paper title 
+{\bfseries AS TÉCNICAS CRIPTOGRÁFICAS, CONCEITOS, USOS E APLICAÇÕES\\UTILIZANDO A TÉCNICA TRIPLE DES}\\[0.2cm]
+
+\vfill
+
+DANIEL CHRISPIM - F263614\\
+DANIEL LIMA - N621184\\
+GABRIEL DE PAULA SEKI - N6853H6\\
+MAISA SERPA CASTRO MOREIRA - F17EFC7\\
+MATHEUS LOPES - N620ED0\\
+VINICIUS AMORIM - N641JC\\ % Add your name
+
+\vfill
+
+{São José dos Campos, \today}\\[0.4cm] % Add date (current day)
+\end{center}
+\end{titlepage}
+
+\newpage
+    
+    \begin{center}
+\begin{minipage}{1\textwidth} % Begins new environment (like a text box)
+    \large
+    \centering
+    
+        \makebox[\textwidth]{\includegraphics[scale=1]{imagens/Logo UNIP.png}}
+        {\LARGE\bfseries UNIP – UNIVERSIDADE PAULISTA\\}
+        {\LARGE Curso de Ciência da Computação}
+\end{minipage}
+\end{center}
+\begin{minipage}{\linewidth}
+    \centering
+  \end{minipage}
+	
+\vspace*{2in} % Adds some space in-between
+	
+\begin{center}
+{\large\bfseries ATIVIDADES PRÁTICAS SUPERVISIONADAS - APS }\\[0.4cm] % Add your paper title 
+{\bfseries AS TÉCNICAS CRIPTOGRÁFICAS, CONCEITOS, USOS E APLICAÇÕES\\UTILIZANDO A TÉCNICA TRIPLE DES }\\[0.2cm]
+\vfill
+\end{center}
+\begin{raggedleft}
+{Atividades Práticas Supervisionadas do\\2º Semestre do Curso de Ciência da\\Computação da \bfseries Universidade Paulista – UNIP.}
+\vfill
+Coordenador: Prof. Fernando A. Gotti\\Prof Responsável: Luiz Gustavo Miranda Pinto
+\vfill
+\end{raggedleft}
+\begin{center}
+{São José dos Campos, \today}\\[0.4cm] % Add date (current day)
+\end{center}
+\newpage
+
+\renewcommand*\contentsname{Sumário}
+
+\tableofcontents
+
+\vfill % Adds additional space
+
+
+
