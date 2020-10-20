@@ -30,14 +30,14 @@ def validate_login(username, password):
         acesso_window = Tk()
         acesso_window.title("Erro")
         width = 100
-        height = 70
+        height = 80
         width_screen = acesso_window.winfo_screenwidth()
         height_screen = acesso_window.winfo_screenheight()
         x = (width_screen/2) - (width/2)-5
-        y = (height_screen/2) - (height/2)-130
+        y = (height_screen/2) - (height/2)-140
         acesso_window.geometry('%dx%d+%d+%d' % (width, height, x, y))
         # Texto da interface
-        l1 = Label(acesso_window, text="Usuário já existe\nou\nSenha em branco\nTente novamente!")
+        l1 = Label(acesso_window, text="Usuário já existe\nou\nSenha em branco\n\nTente novamente!")
         l1.grid(row=1, column=1)
         acesso_window.mainloop()
 
