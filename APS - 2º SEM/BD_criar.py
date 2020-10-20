@@ -13,8 +13,8 @@ def criar(usuario, senha):
     senha_enc = cipher_encrypt.encrypt(bytes(senha, encoding='utf-8'))  # Será salvo no BD encryptada, convertendo para formato binario
     cursor.execute("""SELECT usuario FROM login;""")  # O cursor vai selecionar a coluna de usuarios da tabela de "login"
     tabela_bd = cursor.fetchall()  # Guarda nessa variavel todos os usuarios
-    if tabela_bd == []:
-        if senha == '':
+    if tabela_bd == []:  # Caso o banco de dados esteja vazio na 1a vez que abrir
+        if senha == '':  # Caso a senha digitada esteja em branco
             return 2
         else:
             cursor.execute("""INSERT INTO login (usuario, senha) VALUES (?, ?);""", (usuario, senha_enc))  # Joga os dados no BD
