@@ -9,9 +9,9 @@ def acessar(usuario, senha):
 
     conn = sqlite3.connect('bancodedados.db')  # Conexão com o BD
     cursor = conn.cursor()  # Cursor pra poder manipular o BD
-    cursor.execute("""SELECT * FROM login;""")  # O cursor vai selecionar a tabela "login"
+    cursor.execute("SELECT * FROM login;")  # O cursor vai selecionar a tabela "login"
     tabela_bd = cursor.fetchall()  # E dela vai extrair tudo e jogar nessa variavel numa tupla
-    cursor.execute("""SELECT iv FROM chaves;""")
+    cursor.execute("SELECT iv FROM chaves;")
     tabela_iv = cursor.fetchall()
     linha = 0
     verifica = False

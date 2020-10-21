@@ -22,7 +22,7 @@ def validate_login(username, password):
         y = (height_screen/2) - (height/2)+100
         substancias_window.geometry('%dx%d+%d+%d' % (width, height, x, y))
         # Cria cursor que acessa a tabela substancias no BD
-        cursor = conn.execute('''SELECT * from substancias''')
+        cursor = conn.execute('SELECT * from substancias')
         i = 0
         for substancia in cursor:
             for j in range(len(substancia)):
@@ -46,7 +46,7 @@ def validate_login(username, password):
         y = (height_screen/2) - (height/2)+100
         tripulacao_window.geometry('%dx%d+%d+%d' % (width, height, x, y))
         # Cria cursor que acessa a tabela tripulacao no BD
-        cursor = conn.execute('''SELECT * from tripulacao''')
+        cursor = conn.execute('SELECT * from tripulacao')
         i = 0
         for tripulante in cursor:
             for j in range(len(tripulante)):

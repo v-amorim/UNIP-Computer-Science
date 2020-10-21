@@ -37,19 +37,25 @@
 
 \makeindex                                      % compila o indice
 
+\usepackage{color}
+
+\definecolor{keywordstyle}{RGB}{0,0,255}
+\definecolor{stringstyle}{RGB}{184,21,21}
+\definecolor{commentstyle}{RGB}{0,128,0}
+
 \lstset{
-%    numbers=left, 
-%    stepnumber=1, 
-%    firstnumber=1, 
-%    numberstyle=\tiny, 
+    basicstyle=\ttfamily\tiny,
+    keywordstyle=\color{keywordstyle}, 
+    stringstyle=\ttfamily\color{stringstyle}, 
+    commentstyle=\color{commentstyle},
+    backgroundcolor=\color{gray!5},
     extendedchars=true,
     breaklines=true, 
-    frame=tb, 
-    basicstyle=\footnotesize, 
-    stringstyle=\ttfamily, 
-    showstringspaces=false
+    frame=tb,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny
 }
-
 % Configurações do pacote backref 
 \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
 \renewcommand{\backref}{}                       % Texto padrão antes do número das páginas
