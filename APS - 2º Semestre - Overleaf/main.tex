@@ -1,0 +1,146 @@
+\input{0-setup}
+\input{1-dados}
+
+\begin{document}
+
+\input{2-pretextual}
+%----------------------------------------------------------------------------------------
+% Introdução, Objetivos e Justificativa
+%----------------------------------------------------------------------------------------
+\textual\newpage
+\chapter{\textbf{Introdução}}
+
+\section{\textbf{Objetivos Gerais}}
+\par A criptografia é considerada uma técnica científica de mensagem cifrada ou em código, sendo um dos principais mecanismos de segurança que pode utilizar para se proteger dos riscos associados à utilização de internet. O 3DES foi escolhido por ser uma das cifras de blocos mais utilizadas no mundo, além de ter maior segurança de dados evitando o fácil acesso por força bruta (tentativa e erro).
+
+%----------------------------------------------------------------------------------------
+\section{\textbf{Objetivos Especificos}}
+\par O foco principal do trabalho é desenvolver um programa de login com criptografia \textbf{3DES} utilizando a linguagem \textbf{PYTHON}, muito utilizado no cenário atual, grandes empresas trocam informações sigilosas diariamente e devido a isso é extremamente importante manter seus dados seguros. 
+
+\par O \textbf{Triple Data Encryption (3DES)} utilizado em nosso trabalho, foi desenvolvido pela International Business Machines (IBM) em 1974 e adotado como padrão em 1977, é um padrão de criptografia de chave simétrica baseado em uma rede Feistel, utiliza 3 chaves de 64bits, embora cada chave use apenas 56 bits, enquanto os outros 8 bits são usados para verificar a paridade.
+
+\par O tamanho máximo efetivo da chave é 168 bits.Os dados são criptografados com a primeira chave, descriptografados com a segunda chave e finalmente criptografados com a terceira chave novamente, fornecendo maior segurança. 
+
+%----------------------------------------------------------------------------------------
+\newpage
+\section{\textbf{Justificativa}}
+\par A criptografia é considerada uma técnica científica de mensagem cifrada ou em código, sendo um dos principais mecanismos de segurança que pode utilizar para se proteger dos riscos associados à utilização de internet. O 3DES foi escolhido por ser uma das cifras de blocos mais utilizadas no mundo, além de ter maior segurança de dados evitando o fácil acesso por força bruta (tentativa e erro).
+
+%----------------------------------------------------------------------------------------
+% Tema Escolhido
+%----------------------------------------------------------------------------------------
+\newpage
+\chapter{\textbf{Tema Escolhido}}
+
+\section{\textbf{O que é criptografia?}}
+\par A criptografia é uma prática utilizada para proteger dados de quaisquer tipos de invasões, ela faz a utilização de codificações onde um algoritmo é responsável em mudar os dados, para que eles não possam ser lidos e somente com uma chave específica esses dados voltam ao seu formato original.
+
+\par Hoje em dia com o avanço da tecnologia a criptografia é uma parte muito importante para a segurança, pois cada vez mais temos malwares que podem “roubar” desde suas senhas de redes sociais e até informações sigilosas do governo.
+Como já citado anteriormente, para que seja possível decifrar a criptografia utilizamos uma “key” e cada tipo de criptografia utiliza uma certa quantidades de bits na geração de sua chave, quanto mais bits mais complexo é sua chave, por exemplo, se temos uma chave com 128 bits significa que temos 2128 chaves possíveis para para decifrá-los, quanto maior a quantidade de bits mais seguro será a codificação.
+
+%----------------------------------------------------------------------------------------
+\newpage
+\section{\textbf{Tipos de criptografia}}
+\par A criptografia tem uma ampla variedade de tipos e cada uma tem seu próprio diferencial, tanto como a aplicação ou como sua dificuldade de utilização. Aqui iremos citar alguns dos tipos mais conhecidos e utilizado atualmente.
+ 
+\textbf{Data Encryption Standard (DES):} É um tipo de criptografia mais vulnerável pois se baseia em fazer 16 ciclos de codificações para proteger seus dados e essa proteção utiliza aproximadamente 56 bits.
+Essa criptografia é uma das primeiras a serem utilizadas, sendo assim a mais conhecida e utilizada no mundo, porém sua fraqueza é a fácil decodificação com programas que utilizam uma técnica de força bruta, onde esse programa testa diversas chaves automaticamente durante horas até conseguir a correta. 
+
+\textbf{Advanced Encryption Standard (AES):} Este algoritmo é bastante conhecido pois várias instituições utilizarem e até mesmo o governo do Estados Unidos usa ele como padrão.
+A proteção dele pode variar de acordo com a segurança que você precisa, ele irá te oferecer proteções desde 128 ou até mesmo 192 e 256 bits, assim o tornando um algoritmo extremamente eficaz e confiável.
+
+\textbf{Rivest-Shamir-Adleman (RSA):} Conhecido por sua extrema segurança, ele trabalha de uma forma diferente dos outros tipos de algoritmos de criptografia, sua complexidade é dada por fazer a utilização de duas chaves, uma pública e uma privada.
+A chave pública tem como função cifrar as mensagens e somente com a chave privada você irá conseguir decifrar as mensagens. Essa tecnologia está bastante presente no nosso dia a dia, desde quando enviamos um e-mail para alguém até o momento que fazemos uma compra online.
+
+\par Existem diversos tipos de criptografias, alguns já foram citados mas o mercado tem uma ampla variedade de algoritmos tais como: DESX, Camellia, Blowfish e etc, cada um pode atender o seu cliente de acordo com sua necessidade.
+
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{\textbf{Criptografia simétrica ou chave privada}}
+
+\par A criptografia simétrica ou chave privada ele trabalha na utilização de uma única chave onde essa chave é compartilhada entre o emissor e o destinatário que as guarda de forma sigilosa. Essa chave vai definir como o algoritmo vai cifrar o conteúdo utilizando uma cadeia própria de bits.
+
+\par A vantagem de fazer a utilização da mesma é manter uma comunicação de várias pessoas e uma boa performance da criptografia e caso essa chave seja perdida ou comprometida, basta efetuar uma nova chave assim não precisando alterar o código inicial.
+
+\par Sua segurança vai de acordo com o tamanho da chave utilizada, mas nem tudo é um mar de rosas, sua segurança é falha pois para grandes números de usuários utiliza se duas chaves, ou seja para 10 usuários vão ser geradas 20 chaves, assim fazendo que a gestão de chaves seja complexa.
+
+%----------------------------------------------------------------------------------------
+\subsection{\textbf{Criptografia assimétrica ou chave pública}}
+
+\par Diferente da chave privada a chave pública ou chave assimétrica trabalha com dois tipos de chave de segurança, essas chaves são usada uma para cifrar (chave pública) e uma chave para decifrar (chave privada), assim facilita e melhora a segurança, por exemplo se um destinatário envia um conteúdo criptografado, ele só irá utilizar a chave pública, agora o destinatário só irá precisar de usar a chave privada para poder descriptografar o conteúdo.
+
+\par Esse sistema garante uma melhor privacidade do usuário, assim garante uma grande confiabilidade na utilização. Um dos algoritmos que utiliza esse tipo de chave é o RSA que se baseia em uma multiplicação de números primos para gerar sua chave pública.
+
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{\textbf{Certificado digital}}
+
+\par Baseia-se numa codificação criptográfica onde um software faz operações matemática para gerar uma chave secreta para cada mensagem. Assim o emissor manda um conteúdo cifrado onde todo o conteúdo estará misturado ou embaralhado e quando o destinatário receber ele terá que desembaralhar o conteúdo, isso só pode ocorrer se o destinatário tiver posse da chave correta para decodificação do código.
+
+%----------------------------------------------------------------------------------------
+\subsection{\textbf{Assinatura digital}}
+
+\par É uma codificação que trabalha com funções matemáticas, assim fazendo uma assinatura digital, onde o receptor tem a certeza que o conteúdo recebido não teve alterações na transmissão por terceiros, para que isso funcione o cálculo não pode somente usar cálculos matemáticas, mas deve complementar com informações que somente o remetente saiba, então o receptor ao receber tem que conferir se as informações estão iguais, nesse caso são geradas duas chaves, uma privada e outra pública. Um exemplo da utilização é o imposto de renda.
+
+%----------------------------------------------------------------------------------------
+\newpage
+\subsection{\textbf{Funções hashing}}
+
+\par Funções hashing ou somente Hash é um tipo de algoritmo que faz o mapeamento de entradas de dados com comprimento variável para um comprimento fixo, a função tem como principal função a garantia de que o conteúdo enviado não tenha sido modificado em seu envio.
+
+\par Ela irá trabalhar com uma entrada de “n” itens, essa entrada normalmente é variável ou até o tamanho máximo da função hash, ela é muito utilizada pois são eficientes na verificação de dados, a função sempre irá retornar seu valor hash para qualquer mensagem.
+
+\par A função na prática funciona da seguinte forma: começa com dois blocos de tamanhos fixos de dados de hash ( o tamanho do bloco vai variar de acordo com o algoritmo, sendo utilizado 128 a 512 bits), então a função irá pegar as informações e colocar em um ciclo, este ciclo irá rodar até que toda mensagem seja modificada, então depois disso ela vai para segunda entrada da função hash, o resultado desse ciclo e vai para um terceiro ciclo, assim sucessivamente, quando terminar todos os ciclos teremos o valor Hash que é totalmente diferente do que se iniciou.
+
+%----------------------------------------------------------------------------------------
+\newpage
+\section{\textbf{Triple DES (3DES)}}
+
+\par Com a facilidade em burlar a criptografia DES houve a necessidade da criação de outro tipo de proteção que seja mais forte contra os hackers, assim foi criado o Triple DES.
+\par A sua proteção é baseada em em utilizar três chaves que contém 56 bits, por isso seu nome, ela é três vezes mais protegida que o DES, assim tendo uma proteção de 168 bits.
+
+%----------------------------------------------------------------------------------------
+\subsection{\textbf{Histórico do 3DES}}
+
+\par O intuito da criação desse tipo de criptografia foi para aprimoração da segurança de sua utilização, ela é uma versão mais segura do Data Encryption Standard e foi criada no ano de 1974 pela empresa International Business Machines Corporation (IBM), uma empresa do ramo de informática e tecnologia, porém sua utilização se tornou padrão somente três anos depois.
+
+%----------------------------------------------------------------------------------------
+\subsection{\textbf{Descrição da técnica}}
+
+\par A técnica utilizada pelo 3DES se baseia na utilização de tres chaves criptográficas, a primeira chave faz a criptografia da mensagem, a segunda faz a decifração da mensagem criptografada e a última torna a criptografia o resultado da operação.
+
+%----------------------------------------------------------------------------------------
+\newpage
+\section{\textbf{Software Construído}}
+
+\par O software é responsável por controlar a entrada de pessoas em uma determinada área privada, cada pessoa autorizada terá um usuário e senha que serão criados e inseridos dentro do Banco de Dados, essas senhas serão criptografadas utilizando a técnica de criptografia 3DES. No algoritmo temos uma chave "Sixteen byte key" que possui 16 bits.
+
+\par\textbf {Software de criação de usuário:} Quando o usuário finalizar seu cadastro de usuário e senha, a senha será encriptados usando a key e o IV, logo em seguida serão convertidos em formato binário(senha e IV, usuário mantém formato texto) e enviados para o Banco de Dados.
+
+\par\textbf {Software de acesso:} Serão inseridos usuário e senha, com isso o algoritmo irá buscar no banco de dados e verificar se o usuário está correto, se estiver correto, o algoritmo vai no banco de dados e testa a senha inserida com todos os IV's guardados no banco, converter de binário para string, até achar o que ao decriptar seja igual ao inserido, caso usuário e senha inseridos sejam iguais aos guardados no Banco de Dados, será liberado para entrar na área privada com a informação das Substâncias e Tripulantes.
+
+%----------------------------------------------------------------------------------------
+% Estrutura do Software
+%----------------------------------------------------------------------------------------
+\newpage
+\chapter{\textbf{Estrutura do Software}}
+
+\par O software é composto de um menu de login e senha, e um menu de acesso a dados. O layout escolhido pro software é a GUI simples do Tkinter, que é uma camada fina orientada a objeto sobre Tcl/Tk feita para interfaces gráficas. Os módulos do Tkinter foram importados no Pycharm e no VScode por alguns integrantes da APS, mas todos utilizando a linguagem Python para importar os módulos. Foi instalada também a biblioteca do Pycryptodome a fim de  importar os módulos de criptografia 3DES e implementar o algoritmo de codificação. Para implementar a criptografia ao banco de dados, utilizamos a linguagem estruturada de consulta SQLite, e também o editor SQLite Studio.
+
+%----------------------------------------------------------------------------------------
+% Código Fonte
+%----------------------------------------------------------------------------------------
+\newpage
+\chapter{\textbf{Código Fonte}}
+\renewcommand\lstlistingname{\textbf{Arquivo}}
+
+\lstinputlisting[language=python, label=acessar, caption={BD\_acesso.py}]{codigos/BD_acesso.py}
+\newpage
+\lstinputlisting[language=python, label=acessarGUI, caption={GUI\_acesso.py}]{codigos/GUI_acesso.py}
+\newpage
+\lstinputlisting[language=python, label=criar, caption={BD\_criar.py}]{codigos/BD_criar.py}
+\newpage
+\lstinputlisting[language=python, label=criarGUI, caption={GUI\_criar.py}]{codigos/GUI_criar.py}
+
+\input{3-postextual}
+\end{document}
