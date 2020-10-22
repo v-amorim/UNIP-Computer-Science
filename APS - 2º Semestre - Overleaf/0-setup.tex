@@ -13,22 +13,28 @@
 	english,	% idioma adicional para hifenização
 	brazil		% o último idioma é o principal do documento
 	]{abntex2}
+	
 %----------------------------------------------------------------------------------------
 % Definição dos Packages
 %----------------------------------------------------------------------------------------	
-%\usepackage[utf8]{inputenc}	                 % Codificacao do documento (conversão automática dos acentos)
+\usepackage{silence}                            % Pra pular erros bestas do glossario
+\WarningFilter{glossaries}{Overriding \printglossary}
+\WarningFilter{glossaries}{Overriding `theglossary'}
+
+\usepackage[subentrycounter,seeautonumberlist,nonumberlist=true]{glossaries}
 \usepackage[T1]{fontenc}	                    % Selecao de codigos de fonte. Afeta separação de sílabas
 \usepackage[brazilian,hyperpageref]{backref}    % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}                   % Citações padrão ABNT
-%\usepackage{helvet}                             % Usado para definir a fonte em Helvetica
 \usepackage{lastpage}		                    % Usado pela ficha catalografica
 \usepackage{indentfirst}	                    % Indenta o primeiro paragrafo de cada seção
 \usepackage{microtype} 		                    % Para melhorias de justificação
 \usepackage{bibentry}   	                    % para inserir refs. bib. no meio do texto
 \usepackage{listings}                           % Define as listas (numeradas)
 \usepackage{tikzsymbols}                        % Simbolos matemáticos (usado pra colocar o logo)
-\usepackage{gensymb}                            % Pra poder usar o º (\degree)
+\usepackage{textcomp, gensymb}                  % Pra poder usar o º (\degree)
 \usepackage{fontspec}                           % Pacote para a fonte Arial
+%\usepackage{helvet}                             % Usado para definir a fonte em Helvetica
+%\usepackage[utf8]{inputenc}	                 % Codificacao do documento (conversão automática dos acentos)
 %----------------------------------------------------------------------------------------
 % Execução dos Packages
 %----------------------------------------------------------------------------------------
